@@ -1,4 +1,4 @@
-<script src="{{ asset('build/assets/app-6e0eadfb.js') }}"></script>
+<script src="{{ asset('build/assets/app-dbda1af7.js') }}"></script>
 
 </body>
 
