@@ -44,7 +44,7 @@
             </x-primary-button>
         </div>
     </form>
-    <div class="mt-5">
+    {{-- <div class="mt-5">
         <span>Belum punya akun? <a href="/register" class="text-blue-500">Daftar</a></span>
-    </div>
+    </div> --}}
 </x-guest-layout>
