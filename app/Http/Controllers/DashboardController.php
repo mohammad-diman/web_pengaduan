@@ -7,11 +7,15 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('store');
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
-    
+
     {
         return view('master.layouts.dashboard-tabel', [
             'pengaduan' => Pengaduan::all()
@@ -33,15 +37,15 @@ class DashboardController extends Controller
     {
         // dd($request->all());
         $rules = $request->validate([
-            'nama' => 'required', 
+            'nama' => 'required',
             'judul' => 'required',
             'pesan' => 'required',
             'tanggal' => 'required',
             'lokasi' => 'required',
             'file_input' => 'required',
         ]);
-        $rules['file_input']=$request->file('file_input')->store('bukti');
-        $rules['status']="Baru";
+        $rules['file_input'] = $request->file('file_input')->store('bukti');
+        $rules['status'] = "Baru";
         // dd($rules);
         Pengaduan::create($rules);
         return redirect('/');

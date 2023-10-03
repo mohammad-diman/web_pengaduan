@@ -38,10 +38,13 @@
                     {{ __('Forgot your password?') }}
                 </a>
             @endif
-
+                
             <x-primary-button class="ml-3">
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
     </form>
+    <div class="mt-5">
+        <span>Belum punya akun? <a href="/register" class="text-blue-500">Daftar</a></span>
+    </div>
 </x-guest-layout>

@@ -23,7 +23,8 @@ Route::get('/profile', function () {
     return view('master.layouts.profile');
 });
 
-Route::resource('dashboard', DashboardController::class)->middleware('auth');
+// Route::resource('dashboard', DashboardController::class)->except('index');
+Route::resource('dashboard', DashboardController::class);
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
