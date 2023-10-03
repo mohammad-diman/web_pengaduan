@@ -30,9 +30,15 @@
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                             </li>
                             <li>
-                                <a href="/log out"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Log
-                                    out</a>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+    
+                                    <x-dropdown-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                            this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </x-dropdown-link>
+                                </form>
                             </li>
                         </ul>
                     </div>
