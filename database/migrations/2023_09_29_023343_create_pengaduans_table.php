@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->string('status');
-            $table->string('judul');
+            $table->string('kategori');
             $table->string('pesan');
             $table->date('tanggal')->nullable();
             $table->string('lokasi');

@@ -12,7 +12,7 @@
                         Status
                     </th>
                     <th scope="col" class="px-6 py-3">
-                        Judul laporan
+                        Kategori Laporan
                     </th>
                     <th scope="col" class="px-6 py-3">
                         Isi laporan
@@ -54,7 +54,7 @@
 
                         </td>
                         <td class="px-6 py-4">
-                            {{ $p->judul }}
+                            {{ $p->kategori }}
                         </td>
                         <td class="px-6 py-4">
                             {{ $p->pesan }}

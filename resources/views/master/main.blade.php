@@ -3,7 +3,7 @@
 {{-- @yield('content') --}}
 
 <section class="lg:pt-[29vh] pt-[23vh] h-[100vh]">
-    <img src="{{ asset('image/foto_kantor.jpg') }}" class="w-full top-0 absolute -z-10 blur-sm" alt="">
+    <img src="{{ asset('image/foto_kantor.jpg') }}" class="w-full h-screen top-0 absolute -z-10 blur-sm" alt="">
     <div class="grid max-w-screen-lg px-4 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
         <div class="text-center col-span-12">
             <h1 class="mb-4 text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl text-white dark:text-white">
@@ -29,12 +29,23 @@
                         placeholder="Masukkan nama anda" required value="{{ old('nama') }}">
                 </div>
 
-                <div class="mb-6">
+                {{-- <div class="mb-6">
                     <label for="text"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Judul</label>
                     <input type="text" id="judul" name="judul"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Masukkan judul laporan anda" required value="{{ old('judul') }}">
+                </div> --}}
+
+                <div class="mb-6">
+                    <label for="text"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori Laporan</label>
+                    <select id="kategori" name="kategori" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required value="{{ old('kategori') }}">
+                        <option selected>Pilih Kategori</option>
+                        <option value="Gratifikasi">Gratifikasi</option>
+                        <option value="Pungli (Pungutan Liar)">Pungli (Pungutan Liar)</option>
+                        <option value="Korupsi">Korupsi</option>
+                      </select>
                 </div>
 
                 <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isi
@@ -74,9 +85,10 @@
                         @enderror
                 </div>
 
-                <div class="flex flex-row justify-end mt-5">
-
-
+                <div class="flex flex-row justify-between mt-5 items-center">
+                    <div class="text-sm font-bold">
+                        <p>"Catatan : IDENTITAS PELAPOR AKAN DI RAHASIAKAN"</p>
+                    </div>
                     <button type="submit"
                         class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Submit</button>
                 </div>

@@ -14,16 +14,23 @@
                     </svg>
                 </button>
                 <a href="/" class="flex ml-2 md:mr-24">
-                    <svg class="w-10 h-10 mr-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    {{-- <svg class="w-10 h-10 mr-3 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
                         <path
                             d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
                         <path
                             d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                    </svg>
-                    {{-- <img src="/image/LOGO_KOTA_GORONTALO.png" class="h-8 mr-3" alt="FlowBite Logo" /> --}}
-                    <span
-                        class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Dashboard</span>
+                    </svg> --}}
+                    <img src="/image/LOGO_KOTA_GORONTALO.png" class="h-14 mr-1" alt="FlowBite Logo" />
+                    <div class="sm:flex flex flex-col sm:ml-6">
+                        <span class="text-xl font-semibold whitespace-nowrap text-black">INSPEKTORAT</span>
+                        <span class="self-center text-2xl -mt-2 font-semibold whitespace-nowrap text-black">KOTA
+                            GORONTALO</span>
+                    </div>
+                    {{-- <span
+                        class="text-xl font-semibold whitespace-nowrap text-black">INSPEKTORAT</span>
+                        <span class="self-center text-xl -mt-1 font-semibold whitespace-nowrap text-black">KOTA
+                            GORONTALO</span> --}}
                 </a>
             </div>
             <div class="flex items-center">
@@ -81,7 +88,7 @@
                         <path
                             d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z" />
                     </svg>
-                    <span class="ml-3">Pelayanan</span>
+                    <span class="ml-3">Dashboard</span>
                 </a>
             </li>
 

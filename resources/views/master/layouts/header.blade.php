@@ -1,9 +1,9 @@
 <header class="w-full lg:bg-transparent bg-green-800 absolute top-0 left-0">
     <nav class="z-20 top-0 left-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="/" class="flex items-center">
+            <a href="/" class="flex items-center sm:ml-6">
                 <img src="/image/LOGO_KOTA_GORONTALO.png" class="h-14 mr-1" alt="Flowbite Logo">
-                <div class="flex flex-col">
+                <div class="sm:flex flex flex-col sm:ml-6">
                     <span class="text-xl font-semibold whitespace-nowrap text-white">INSPEKTORAT</span>
                     <span class="self-center text-2xl -mt-2 font-semibold whitespace-nowrap text-white">KOTA
                         GORONTALO</span>
