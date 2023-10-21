@@ -1,5 +1,5 @@
 <header class="w-full lg:bg-transparent bg-green-800 absolute top-0 left-0">
-    <nav class="z-20 top-0 left-0">
+    <nav class="z-20 top-0 left-0 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center sm:ml-6">
                 <img src="/image/LOGO_KOTA_GORONTALO.png" class="h-14 mr-1" alt="Flowbite Logo">
@@ -10,7 +10,7 @@
                 </div>
             </a>
             @auth
-                <div class="sm:flex sm:items-center sm:ml-6">
+                <div class=" sm:flex sm:items-center sm:ml-6">
 
                     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                         class="text-white bg-transparent font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
